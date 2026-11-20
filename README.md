@@ -11,6 +11,7 @@ Those 2 XMLs will add in the following systems
 - NES Hacks (`nesh`)
 - SNES Hacks (`snesh`)
 - Switch (`switch`)
+- Pokemon (`pokemon`)
 
 They are to be placed in `ES-DE/custom_systems` (Download them and copy/paste them into that directory, make sure you don't have them end as `.txt`, they _have_ to be `.xml`).
 After adding the custom system files make sure to fully close ES-DE and restart it for the custom system files to load (not just rescan roms).
