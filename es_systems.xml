@@ -272,7 +272,7 @@
         <command label="Pizza Boy GBA (Standalone)">%EMULATOR_PIZZA-BOY-GBA% %ACTIVITY_CLEAR_TASK% %ACTIVITY_CLEAR_TOP% %EXTRA_rom_uri%=%ROMSAF%</command>
         <command label="PokeDaisy (Standalone)">%EMULATOR_POKEDAISY% %ACTION%=android.intent.action.VIEW %DATA%=%ROMSAF%</command>
         <platform>gba</platform>
-        <theme>gba</theme>
+        <theme>pokemon</theme>
     </system>
 	<system>
         <name>ps3</name>
