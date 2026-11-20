@@ -101,6 +101,12 @@
             <entry>com.andromeda.androbench2/org.suyu.suyu_emu.activities.EmulationActivity</entry>
         </rule>
     </emulator>
+    <emulator name="POKEDAISY">
+        <!-- Game Boy Advance player PokeDaisy -->
+        <rule type="androidpackage">
+            <entry>com.pokedaisy.app/.LaunchActivity</entry>
+        </rule>
+    </emulator>
     <emulator name="SUDACHI">
         <!-- Nintendo Switch emulator Sudachi -->
         <rule type="androidpackage">

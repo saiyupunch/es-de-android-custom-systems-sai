@@ -2,6 +2,32 @@
 <!-- This is the ES-DE game systems configuration file for Android -->
 <systemList>
     <system>
+        <name>gb</name>
+        <fullname>Nintendo Game Boy</fullname>
+        <path>%ROMPATH%/gb</path>
+        <extension>.bs .BS .cgb .CGB .dmg .DMG .gb .GB .gbc .GBC .gbx .GBX .sgb .SGB .sfc .SFC .smc .SMC .7z .7Z .zip .ZIP</extension>
+        <command label="Gambatte">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/gambatte_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="SameBoy">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/sameboy_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="Gearboy">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/gearboy_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="TGB Dual">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/tgbdual_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="DoubleCherryGB">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/DoubleCherryGB_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="IroGB">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/irogb_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="Mesen-S">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/mesen-s_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="MesenCE">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/mesen2_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="bsnes">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/bsnes_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="mGBA">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/mgba_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="VBA-M">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/vbam_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="SkyEmu">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/skyemu_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="SkyEmu (Standalone)">%EMULATOR_SKYEMU% %ACTIVITY_CLEAR_TASK% %ACTIVITY_CLEAR_TOP% %ACTION%=android.intent.action.VIEW %DATA%=%ROMPROVIDER%</command>
+        <command label="GBC.emu (Standalone)">%EMULATOR_GBC-EMU% %DATA%=%ROMPROVIDER%</command>
+        <command label="My OldBoy! (Standalone)">%EMULATOR_MY-OLDBOY% %ACTION%=android.intent.action.VIEW %DATA%=%ROMSAF%</command>
+        <command label="Linkboy (Standalone)">%EMULATOR_LINKBOY% %ACTION%=android.intent.action.VIEW %DATA%=%ROMSAF%</command>
+        <command label="Pizza Boy GBC (Standalone)">%EMULATOR_PIZZA-BOY-GBC% %ACTIVITY_CLEAR_TASK% %ACTIVITY_CLEAR_TOP% %EXTRA_rom_uri%=%ROMSAF%</command>
+        <command label="PokeDaisy (Standalone)">%EMULATOR_POKEDAISY% %ACTION%=android.intent.action.VIEW %DATA%=%ROMSAF%</command>
+        <platform>gb</platform>
+        <theme>gb</theme>
+    </system>
+    <system>
         <name>gbh</name>
         <fullname>Nintendo Game Boy Hacks</fullname>
         <path>%ROMPATH%/gbh</path>
@@ -23,8 +49,31 @@
         <command label="My OldBoy! (Standalone)">%EMULATOR_MY-OLDBOY% %ACTION%=android.intent.action.VIEW %DATA%=%ROMSAF%</command>
         <command label="Linkboy (Standalone)">%EMULATOR_LINKBOY% %ACTION%=android.intent.action.VIEW %DATA%=%ROMSAF%</command>
         <command label="Pizza Boy GBC (Standalone)">%EMULATOR_PIZZA-BOY-GBC% %ACTIVITY_CLEAR_TASK% %ACTIVITY_CLEAR_TOP% %EXTRA_rom_uri%=%ROMSAF%</command>
+        <command label="PokeDaisy (Standalone)">%EMULATOR_POKEDAISY% %ACTION%=android.intent.action.VIEW %DATA%=%ROMSAF%</command>
         <platform>gb</platform>
         <theme>gbh</theme>
+    </system>
+    <system>
+        <name>gba</name>
+        <fullname>Nintendo Game Boy Advance</fullname>
+        <path>%ROMPATH%/gba</path>
+        <extension>.agb .AGB .bin .BIN .cgb .CGB .dmg .DMG .gb .GB .gba .GBA .gbc .GBC .gbx .GBX .sgb .SGB .7z .7Z .zip .ZIP</extension>
+        <command label="mGBA">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/mgba_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="VBA-M">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/vbam_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="VBA Next">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/vba_next_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="gpSP">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/gpsp_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="NooDS">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/noods_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="NooDS (Standalone)">%EMULATOR_NOODS% %ACTIVITY_CLEAR_TASK% %ACTIVITY_CLEAR_TOP% %EXTRA_LaunchPath%=%ROM%</command>
+        <command label="SkyEmu">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/skyemu_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="SkyEmu (Standalone)">%EMULATOR_SKYEMU% %ACTIVITY_CLEAR_TASK% %ACTIVITY_CLEAR_TOP% %ACTION%=android.intent.action.VIEW %DATA%=%ROMPROVIDER%</command>
+        <command label="MesenCE">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/mesen2_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="GBA.emu (Standalone)">%EMULATOR_GBA-EMU% %DATA%=%ROMPROVIDER%</command>
+        <command label="My Boy! (Standalone)">%EMULATOR_MY-BOY% %ACTION%=android.intent.action.VIEW %DATA%=%ROMSAF%</command>
+        <command label="Linkboy (Standalone)">%EMULATOR_LINKBOY% %ACTION%=android.intent.action.VIEW %DATA%=%ROMSAF%</command>
+        <command label="Pizza Boy GBA (Standalone)">%EMULATOR_PIZZA-BOY-GBA% %ACTIVITY_CLEAR_TASK% %ACTIVITY_CLEAR_TOP% %EXTRA_rom_uri%=%ROMSAF%</command>
+        <command label="PokeDaisy (Standalone)">%EMULATOR_POKEDAISY% %ACTION%=android.intent.action.VIEW %DATA%=%ROMSAF%</command>
+        <platform>gba</platform>
+        <theme>gba</theme>
     </system>
     <system>
         <name>gbah</name>
@@ -44,8 +93,35 @@
         <command label="My Boy! (Standalone)">%EMULATOR_MY-BOY% %ACTION%=android.intent.action.VIEW %DATA%=%ROMSAF%</command>
         <command label="Linkboy (Standalone)">%EMULATOR_LINKBOY% %ACTION%=android.intent.action.VIEW %DATA%=%ROMSAF%</command>
         <command label="Pizza Boy GBA (Standalone)">%EMULATOR_PIZZA-BOY-GBA% %ACTIVITY_CLEAR_TASK% %ACTIVITY_CLEAR_TOP% %EXTRA_rom_uri%=%ROMSAF%</command>
+        <command label="PokeDaisy (Standalone)">%EMULATOR_POKEDAISY% %ACTION%=android.intent.action.VIEW %DATA%=%ROMSAF%</command>
         <platform>gba</platform>
         <theme>gbah</theme>
+    </system>
+    <system>
+        <name>gbc</name>
+        <fullname>Nintendo Game Boy Color</fullname>
+        <path>%ROMPATH%/gbc</path>
+        <extension>.bs .BS .cgb .CGB .dmg .DMG .gb .GB .gbc .GBC .gbx .GBX .sgb .SGB .sfc .SFC .smc .SMC .7z .7Z .zip .ZIP</extension>
+        <command label="Gambatte">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/gambatte_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="SameBoy">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/sameboy_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="Gearboy">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/gearboy_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="TGB Dual">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/tgbdual_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="DoubleCherryGB">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/DoubleCherryGB_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="IroGB">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/irogb_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="Mesen-S">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/mesen-s_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="MesenCE">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/mesen2_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="bsnes">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/bsnes_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="mGBA">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/mgba_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="VBA-M">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/vbam_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="SkyEmu">%EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=%EXTERNALDATA%/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=%INTERNALDATA%/%ANDROIDPACKAGE%/cores/skyemu_libretro_android.so %EXTRA_ROM%=%ROM%</command>
+        <command label="SkyEmu (Standalone)">%EMULATOR_SKYEMU% %ACTIVITY_CLEAR_TASK% %ACTIVITY_CLEAR_TOP% %ACTION%=android.intent.action.VIEW %DATA%=%ROMPROVIDER%</command>
+        <command label="GBC.emu (Standalone)">%EMULATOR_GBC-EMU% %DATA%=%ROMPROVIDER%</command>
+        <command label="My OldBoy! (Standalone)">%EMULATOR_MY-OLDBOY% %ACTION%=android.intent.action.VIEW %DATA%=%ROMSAF%</command>
+        <command label="Linkboy (Standalone)">%EMULATOR_LINKBOY% %ACTION%=android.intent.action.VIEW %DATA%=%ROMSAF%</command>
+        <command label="Pizza Boy GBC (Standalone)">%EMULATOR_PIZZA-BOY-GBC% %ACTIVITY_CLEAR_TASK% %ACTIVITY_CLEAR_TOP% %EXTRA_rom_uri%=%ROMSAF%</command>
+        <command label="PokeDaisy (Standalone)">%EMULATOR_POKEDAISY% %ACTION%=android.intent.action.VIEW %DATA%=%ROMSAF%</command>
+        <platform>gbc</platform>
+        <theme>gbc</theme>
     </system>
     <system>
         <name>gbch</name>
@@ -69,6 +145,7 @@
         <command label="My OldBoy! (Standalone)">%EMULATOR_MY-OLDBOY% %ACTION%=android.intent.action.VIEW %DATA%=%ROMSAF%</command>
         <command label="Linkboy (Standalone)">%EMULATOR_LINKBOY% %ACTION%=android.intent.action.VIEW %DATA%=%ROMSAF%</command>
         <command label="Pizza Boy GBC (Standalone)">%EMULATOR_PIZZA-BOY-GBC% %ACTIVITY_CLEAR_TASK% %ACTIVITY_CLEAR_TOP% %EXTRA_rom_uri%=%ROMSAF%</command>
+        <command label="PokeDaisy (Standalone)">%EMULATOR_POKEDAISY% %ACTION%=android.intent.action.VIEW %DATA%=%ROMSAF%</command>
         <platform>gbc</platform>
         <theme>gbch</theme>
     </system>
